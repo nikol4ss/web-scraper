@@ -1,7 +1,7 @@
 from fastapi import APIRouter
-from app.scraper import scrape_product
-from app.handler import get_price_history
-from app.models import PriceResponse
+from app.services import scrape_product
+from app.services.handler import get_price_history
+from model import PriceResponse
 
 router = APIRouter()
 
